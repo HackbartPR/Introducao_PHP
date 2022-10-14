@@ -54,3 +54,5 @@ function exibirSaldo(string $cpf): float {
     global $contasCorrentes;
     return $contasCorrentes[$cpf]['saldo'];
 }
+
+
