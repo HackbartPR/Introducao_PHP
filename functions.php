@@ -22,6 +22,8 @@ exibirContas($contasCorrentes);
 depositar("14784552766", 100);
 exibirContas($contasCorrentes);
 echo exibirSaldo("14784552766");
+removerUsuario("14784552766");
+exibirContas($contasCorrentes);
 
 function exibirContas($contas):void{
     foreach($contas as $cpf=>$conta){
@@ -54,5 +56,11 @@ function exibirSaldo(string $cpf): float {
     global $contasCorrentes;
     return $contasCorrentes[$cpf]['saldo'];
 }
+
+function removerUsuario(string $cpf):void{
+    global $contasCorrentes;
+    unset($contasCorrentes[$cpf]);
+}
+ 
 
 
