@@ -17,13 +17,13 @@ $contasCorrentes = [
     ]
 ];
 
-sacar("14784552766", 500);
+/* sacar("14784552766", 500);
 exibirContas($contasCorrentes);
 depositar("14784552766", 100);
 exibirContas($contasCorrentes);
 echo exibirSaldo("14784552766");
 removerUsuario("14784552766");
-exibirContas($contasCorrentes);
+exibirContas($contasCorrentes); */
 
 function exibirContas($contas):void{
     foreach($contas as $cpf=>$conta){
